@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+    position: relative;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: min-content;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 50px 5px rgba(0, 0, 0, 0.5);
+}
+
+main > .image > #image-equilibrium {
+    width: 20vw;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+main > .image > #image-equilibrium:hover {
+    cursor: pointer;
+    background-color: hsl(215, 51%, 70%);
+}
+
+main > .image > #icon-view {
+    display: none;
+}
+
+main > .description {
+    display: flex;
+    flex-direction: column;
+}
+
+main > .description > #title {
+    font: 600 1.5rem Outfit, sans-serif;
+    color: white;
+    margin-bottom: 20px;
+}
+
+main > .description > #title:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+main > .description > #text {
+    margin-bottom: 20px;
+    font: 300 0.9rem Outfit, sans-serif;
+    color: rgba(255, 255, 255, 0.500);
+}
+
+main > .description > .details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+main > .description > .details > #value {
+    font: 400 0.9rem Outfit, sans-serif;
+    color: hsl(178, 100%, 50%);
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+main > .description > .details > #time {
+    font: 300 0.9rem Outfit,sans-serif;
+    color: hsla(0, 0%, 100%, 0.500);
+    margin-left: 10px;
+}
+
+main > .description > hr {
+    border-color: hsl(215, 32%, 27%);
+    border-style: solid;
+    margin-bottom: 20px;
+}
+main > .description > .creation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main > .description > .creation > #image-avatar {
+    width: 10%;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+main > .description > .creation > #name {
+    font: 300 0.9rem Outfit,sans-serif;
+    color: hsla(0, 0%, 100%, 0.500);
+}
+
+main > .description > .creation > #name > a {
+    color: white;
+}
+
+main > .description > .creation > #name > a:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: xx-small;
+    color: white;
+}
